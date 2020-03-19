@@ -7,7 +7,7 @@
 
 
 if (window.location.protocol != "https:" && !/(([01]{0,1}\d{0,1}\d|2[0-4]\d|25[0-5])\.){3}([01]{0,1}\d{0,1}\d|2[0-4]\d|25[0-5])/.test(window.location.href))
-    window.location.href = targetProtocol +
+    window.location.href = "https:" +
         window.location.href.substring(window.location.protocol.length);
 
 $(document).ready(function () {
