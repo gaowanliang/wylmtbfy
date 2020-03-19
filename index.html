@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<!--创意及原始代码来自lmbtfy.cn和孟坤网页实验室，高玩梁重新完善了其功能-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>需要我帮你百度一下吗? | Would you like me to baidu for you?</title>
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font.min.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158371937-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-158371937-2');
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 class="title">需要我帮你 <img src="img/baidu_logo.png" class="baidu-logo" alt="百度" title="需要我帮你百度一下吗"> 一下吗？
+            </h1>
+            <div class="mk-search-form">
+                <input type="text" id="kw">
+                <button id="search" class="anim-trans">百度一下</button>
+            </div>
+        </div>
+        <div id="instructions">输入一个问题，然后点击百度一下</div>
+        <div id="output-box">
+            <input type="text" id="output-link" readonly>
+            <div>
+                <button class="btn btn-copy anim-trans" data-clipboard-target="#output-link">复制</button>
+                <button class="btn anim-trans" id="btn-preview">预览</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="copyright">
+        <p>&copy; <a href="https://gwliang.com" target="_blank">高玩梁</a> <span>2020</span> <a id="disclaimer"
+                href="javascript:;">免责声明</a>
+        </p>
+    </footer>
+
+    <div id="about-box" class="mk-pop-box">
+        <div class="mk-pop-box-inner">
+            <h3 class="mk-pop-box-title">免责声明</h3>
+            <div class="mk-pop-box-content">
+                <p>本站与<a href="https://www.baidu.com" target="_blank">百度公司</a>没有任何联系，baidu 以及本站出现的百度公司 Logo 是<a
+                        href="https://www.baidu.com" target="_blank">百度公司</a>的商标。
+                </p>
+            </div>
+            <button class="mk-pop-box-btn anim-trans" onclick="$('#about-box').fadeOut(200);">我知道了</button>
+        </div>
+    </div>
+    <img src="/img/arrow.png" id="arrow">
+    <script src="https://cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="js/lmbtfy.min.js"></script>
+
+</body>
+
+</html>
